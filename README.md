@@ -2,7 +2,7 @@
 <p>Para a resolução do desafio proposto, utilizei as seguintes tecnologias:
 
 <ul>
-    <li>Framwork <strong>**REACT**</strong> na criação das telas de login e comment box;</li>
+    <li>Framework <strong>**REACT**</strong> na criação das telas de login e comment box;</li>
     <li>Foi utilizada uma FakerApi para realização de testes;</li>
     <li>Projeto foi eloborado com <strong>HTML5, CSS3 e JAVASCRIPT</strong>;</li>
 </ul>
