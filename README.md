@@ -35,7 +35,7 @@ Após a inicialização do npm, sera aberto um link no navegador
 
 <li>Clique no botão de login - Aguarde a conclusão do login</li>
 
-<h3>Caso o usuário não seja cadastrado no sistema, deverá realizar o<strong>cadastro</strong>.</h3>
+<h3>Caso o usuário não seja cadastrado no sistema, deverá realizar o <strong>cadastro</strong>.</h3>
 
 <p>Requisitos para cadastro</p>
 
