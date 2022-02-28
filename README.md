@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+<h1>Teste QuikDev - DESENVOLVEDOR FRONT-END</h1>
+<p>Para a resolução do desafio proposto, utilizei as seguintes tecnologias:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<ul>
+    <li>Framwork <strong>**REACT**</strong> na criação das telas de login e comment box;</li>
+    <li>Foi utilizada uma FakerApi para realização de testes;</li>
+    <li>Projeto foi eloborado com <strong>HTML5, CSS3 e JAVASCRIPT</strong>;</li>
+</ul>
 
-## Available Scripts
+<h2>Como rodar localmente:</h2>
 
-In the project directory, you can run:
+<h3>Rodando o projeto tela de login e comment box:</h3>
+<p>Dentro do diretório <strong>integrandoapi</strong> instale as dependências do npm executando o comando:</p>
 
-### `npm start`
+<pre>npm install</pre>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p>Ainda dentro do diretório <strong>integrandoapi</strong> execute o comando:</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<pre>npm start</pre>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Após a inicialização do npm, sera aberto um link no navegador
 
-### `npm run build`
+<pre>http://localhost:3000/</pre>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ao ser direcionado para a tela de login, será necessario utilizar um <strong>usuário válido</strong>e uma <strong>senha válida</strong>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p>Requisitos para efetuar login</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<li>Pré-condição: Ter uma conta no sistema</li>
 
-### `npm run eject`
+<li>Acesse a página de login</i>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<li>preencha as credenciais</i>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<li>Clique no botão de login - Aguarde a conclusão do login</li>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Caso o usuário não seja cadastrado no sistemas, deverá realizar o<strong>cadastro</strong>.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p>Requisitos para cadastro</p>
 
-## Learn More
+<li>Informar nome completo</i>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<li>Nome de usuário</i>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<li>Senha</i>
 
-### Code Splitting
+<h3>Interação com a tela <strong>POST</strong></h3>
+<p> Funcionalidades </p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<li>Adicionar</i>
 
-### Analyzing the Bundle Size
+<li>Comentar</i>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<li>Editar</i>
 
-### Making a Progressive Web App
+<li>Deletar</i>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<h3>Interação com a tela de <strong>COMENTARIOS</strong></h3>
+<p>Funcionalidades</p>
 
-### Advanced Configuration
+<li>Adicionar</i>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<li>Comentar</i>
 
-### Deployment
+<li>Editar</i>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<li>Deletar</i>
 
-### `npm run build` fails to minify
+<h3>Fazer Logout</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>Após realizar testes, utilizar o botão logout para sair da tela <strong>POST</strong></p>
+
+** Caso necessário instalação do <a href="https://nodejs.org/en/docs/" target="_blank">NODE</a> na máquina, consulte a documentação **
