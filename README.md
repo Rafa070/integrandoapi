@@ -23,19 +23,19 @@ Após a inicialização do npm, sera aberto um link no navegador
 
 <pre>http://localhost:3000/</pre>
 
-Ao ser direcionado para a tela de login, será necessario utilizar um <strong>usuário válido</strong>e uma <strong>senha válida</strong>
+<h3>Ao ser direcionado para a tela de login, será necessario utilizar um <strong>usuário válido</strong> e uma <strong>senha válida.</strong></h3>
 
 <p>Requisitos para efetuar login</p>
 
 <li>Pré-condição: Ter uma conta no sistema</li>
 
-<li>Acesse a página de login</i>
+<li>Acesse a página de login</li>
 
-<li>preencha as credenciais</i>
+<li>preencha as credenciais</li>
 
 <li>Clique no botão de login - Aguarde a conclusão do login</li>
 
-Caso o usuário não seja cadastrado no sistemas, deverá realizar o<strong>cadastro</strong>.
+<h3>Caso o usuário não seja cadastrado no sistemas, deverá realizar o<strong>cadastro</strong>.</h3>
 
 <p>Requisitos para cadastro</p>
 
