@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="preconnect" href="https://fb.me/react-15.1.0.min.js">
+  <link rel="preconnect" href="https://fb.me/react-dom-15.1.0.min.js">
+  
+  <title>Teste QuikDev App</title>
+</head>
+
+<body>
+  <noscript> You need to enable JavaScript to run this app. </noscript>
+  <div id="root"></div>
+
+  
+  <div id="doc"></div>
+  
+  <script>
+    Vue.createApp({
+        data() {
+            return {
+                resultLogin: [],
+                resultLogout: [],
+                resultRegister: [],
+                resultMe: [],
+                resultListaPosts: [],
+                resultCriaPost: [],
+                resultBuscaPost: [],
+                resultAtualizaPost: [],
+                resultRemovePost: [],
+                resultListaComments: [],
+                resultCriaComment: [],
+                resultBuscaComment: [],
+                resultAtualizaComment: [],
+                resultRemoveComment: [],
+            }
+        },
+        methods: {
+            async simularLogin() {
+                this.resultLogin = await window.FakerApi.post('/login', { username: 'teste', password: 'teste' }).catch((response) => response)
+            },
+            async simularLogout() {
+                this.resultLogin = await window.FakerApi.post('/logout', {}).catch((response) => response)
+            },
+            async simularRegister() {
+                this.resultRegister = await window.FakerApi.post('/register', { name:'teste', username: 'teste', password: 'teste' }).catch((response) => response)
+            },
+            async simularMe() {
+                this.resultMe = await window.FakerApi.get('/me', {}).catch((response) => response)
+            },
+            async simularListaPosts() {
+                this.resultListaPosts = await window.FakerApi.get('/posts', {}).catch((response) => response)
+            },
+            async simularCriaPost() {
+                this.resultCriaPost = await window.FakerApi.post('/posts/create', { title:'teste', content: 'teste' }).catch((response) => response)
+            },
+            async simularBuscaPost() {
+                this.resultBuscaPost = await window.FakerApi.get('/posts/view', { post_id: 1 }).catch((response) => response)
+            },
+            async simularAtualizaPost() {
+                this.resultAtualizaPost = await window.FakerApi.put('/posts/update', { post_id: 1, post: { title:'teste', content:'teste atualizado' } }).catch((response) => response)
+            },
+            async simularRemovePost() {
+                this.resultRemovePost = await window.FakerApi.delete('/posts/remove', { post_id: 2 }).catch((response) => response)
+            },
+            async simularListaComments() {
+                this.resultListaComments = await window.FakerApi.get('/comments', { post_id: 1 }).catch((response) => response)
+            },
+            async simularCriaComment() {
+                this.resultCriaComment = await window.FakerApi.post('/comments/create', { post_id: 1, comment: { content: 'Comentario teste' } }).catch((response) => response)
+            },
+            async simularBuscaComment() {
+                this.resultBuscaComment = await window.FakerApi.get('/comments/view', { post_id: 1, comment_id: 1 }).catch((response) => response)
+            },
+            async simularAtualizaComment() {
+                this.resultAtualizaComment = await window.FakerApi.put('/comments/update', { post_id: 1, comment_id: 1, post: { content:'Comentario atualizado' } }).catch((response) => response)
+            },
+            async simularRemoveComment() {
+                this.resultRemoveComment = await window.FakerApi.delete('/comments/remove', { post_id: 1, comment_id: 2 }).catch((response) => response)
+            },
+        }
+    }).mount('#app')
+</script>
+</body>
+
+</html>
